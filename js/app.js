@@ -4,10 +4,16 @@ window.onload = () => {
         .on('child_added', (residentes)=>{ //Para escuchar datos más veces o doblegados
             let contenedor = document.getElementById('contendorResidentes');
             contenedor.innerHTML += `
-            
-                <p>${residentes.val().visitante}</p>
-                <img style="width: 200px; border-radius: 22%" src="${residentes.val().imgurl}">
-                </img>
+                <div class="row">
+              <div class="col-sm-6 col-md-6 col-6">
+                  <img id="imgBD" src="${residentes.val().imgurl}" alt="">
+              </div>
+              <div class="col-sm-6 col-md-6 col-6">
+                    <p>nombre: ${residentes.val().visitante}</p>
+                    <p>empresa: ${residentes.val().empresa}</p>
+                    <p>contacto: ${residentes.val().contacto}</p>
+                </div>
+          </div>
             `;
         });
 }
@@ -16,6 +22,10 @@ window.onload = () => {
 function htmlresidentes() {
         location = '../registroIf.html';
 }
+function clickHome() {
+    location = 'opciones.html';
+}
+
 
 
 
@@ -56,6 +66,9 @@ function htmlresidentes() {
         console.log("Error de firebase > "+error.code);
         console.log("Error de firebase, mensaje > "+error.message);
       });
+}
+function listaResidentes() {
+    location = '../residentesif.html';
 }
 function logout(){
     

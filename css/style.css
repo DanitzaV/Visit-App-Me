@@ -54,10 +54,6 @@ H3{
     padding: 0;
 
 }
-#contendorResidentes{
-    display: -webkit-box;
-
-}
 .fa-home{
     color: #FFFFFF;
 }
@@ -66,4 +62,19 @@ H3{
 }
 .formularioResidentes{
     margin-top: 5%;
+}
+.espacioBtn{
+    margin-bottom: 2%
+}
+.btn-width{
+    width: 50%;
+}
+#imgBD{
+    width: 49%;
+    height: 29%;
+    border-radius: 105%;
+    margin-bottom: 7%;
+}
+.sectionResidente{
+    color: black;
 }
