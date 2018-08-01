@@ -74,7 +74,7 @@ function logout(){
     
   firebase.auth().signOut()
     .then(()=>{
-    location = '../login.html';
+    location = 'login.html';
       })
     .catch();
     
